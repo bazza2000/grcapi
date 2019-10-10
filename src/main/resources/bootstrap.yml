@@ -1,0 +1,12 @@
+
+---
+spring :
+  jmx:
+    enabled: false
+  application:
+    name: grcapi
+
+
+server:
+  servlet.context-path: /grcapi
+  port: ${port}
