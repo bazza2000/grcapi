@@ -37,6 +37,6 @@ pipeline {
   triggers {
     GenericTrigger(genericVariables: [
                     [key: 'ref', value: '$.ref']
-                  ], causeString: 'Triggered on $ref', token: 'authNservice', printContributedVariables: true, printPostContent: true, silentResponse: false)
+                  ], causeString: 'Triggered on $ref', token: 'grcapi', printContributedVariables: true, printPostContent: true, silentResponse: false)
     }
   }
