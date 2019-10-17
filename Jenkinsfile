@@ -15,11 +15,6 @@ pipeline {
         //nexusPolicyEvaluation advancedProperties: '', failBuildOnNetworkError: false, iqApplication: selectedApplication('authNservice'), iqScanPatterns: [[scanPattern: '**/target/*.jar']], iqStage: 'build', jobCredentialsId: 'jenkins-nexus'
         archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
       }
-      post {
-        always {
-            junit 'target/surefire-reports/*.xml'
-        }
-      }
     }
   }
   environment {
